@@ -98,7 +98,4 @@ MIT License
 
 ---
 
-## 📄 License
-
-MIT License
 
