@@ -1,5 +1,5 @@
 # PermissionlessIV-CRISPR-Cancer-DeSci
-Decentralized, Permissionless, and auditable CRISPR target discovery, annotation, and verification powered by Agentic AI/ML and BNB Blockchain. Open, reproducible pipeline for exploring glioblastoma (GBM) tumor heterogeneity using CRISPR gene essentiality data, advanced manifold learning (UMAP, PHATE, etc.), AI annotation, and blockchain-based proof anchoring.**
+Decentralized, Permissionless, and auditable CRISPR target discovery, annotation, and verification powered by Agentic AI/ML and BNB Blockchain. Open, reproducible pipeline for exploring glioblastoma (GBM) tumor heterogeneity using CRISPR gene essentiality data, advanced manifold learning (UMAP, PHATE, etc.) for powerful data analysis, AI agent annotation, and blockchain-based proof anchoring.**
 
 ---
 
