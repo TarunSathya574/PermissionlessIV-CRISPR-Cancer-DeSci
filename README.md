@@ -5,7 +5,7 @@ Decentralized, Permissionless, and auditable CRISPR target discovery, annotation
 
 ## 🚀 Overview
 
-This project enables permissionless, transparent research in cancer genomics by leveraging CRISPR functional genomics, state-of-the-art manifold learning, AI-driven literature annotation, and Web3 cryptographic proofs. The pipeline is designed for reproducibility, extensibility, and open science, embodying DeSci principles.
+Verifiable Gene Editing Target Prioritization and Discovery using Functional Genomics Data for Cancer Therapy enables permissionless, transparent research in cancer genomics by leveraging CRISPR functional genomics, state-of-the-art manifold learning, AI-driven literature annotation, and Web3 cryptographic proofs. The pipeline is designed for reproducibility, extensibility, and open science, embodying DeSci principles.
 
 ---
 
