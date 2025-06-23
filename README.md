@@ -3,35 +3,24 @@ Decentralized, Permissionless, and auditable CRISPR target discovery, annotation
 
 ---
 
-## 🚀 Overview
+# Permissionless IV Hackathon: BNB DeSci Track
 
-Verifiable Gene Editing Target Prioritization and Discovery using Functional Genomics Data for Cancer Therapy enables permissionless, transparent research in cancer genomics by leveraging CRISPR functional genomics, state-of-the-art manifold learning, AI-driven literature annotation, and Web3 cryptographic proofs. The pipeline is designed for reproducibility, extensibility, and open science, embodying DeSci principles.
-
----
-
-## 💡 Key Features
-
-- **Functional Heterogeneity Analysis:**  
-  Analyze GBM cell lines using CRISPR gene essentiality, not just expression data.
-- **Manifold Learning:**  
-  Visualize and cluster data with UMAP, PHATE, and more for deep biological insight.
-- **Clustering:**  
-  Identify novel GBM subtypes or dependencies via clustering in low-dimensional space.
-- **Top Essential Genes:**  
-  Discover and annotate high-priority genes with AI (LLM/Anthropic MCP).
-- **Proof Anchoring:**  
-  Generate SHA-256 cryptographic hashes and anchor key results on the BNB blockchain.
-- **Extensible & Open:**  
-  Framework for integrating multi-omics, VTE phenotypes, or federated privacy-preserving learning.
+**Open, reproducible pipeline for CRISPR-based GBM heterogeneity research, built for the Permissionless IV Hackathon (BNB DeSci Track).**
 
 ---
 
-## 🗂️ Project Structure
+## Overview
+
+This repository contains a transparent and auditable pipeline for exploring glioblastoma (GBM) tumor heterogeneity using CRISPR gene essentiality data, UMAP/PHATE manifold learning, AI annotation, and blockchain-based proof anchoring (with Merkle tree and simulated ZKP support). Built for the BNB DeSci track at Permissionless IV.
+
+---
+
+## Structure
 
 ```
-permissionless-IV-crispr-gbm-deSci/
+.
 ├── README.md
-├── crispr_gbm_pipeline_v14.py
+├── crispr_gbm_pipeline_v15.py
 ├── requirements.txt
 ├── LICENSE
 ├── data/
@@ -41,82 +30,71 @@ permissionless-IV-crispr-gbm-deSci/
 │   ├── top10_essential_genes.csv
 │   ├── top10_essential_genes_annotated.csv
 │   ├── umap_gbm_clusters.png
-│   ├── results_proof.txt
-│   └── bnb_anchor_tx_hash.txt
+│   ├── results_hashes.json
+│   ├── merkle_tree.json
+│   ├── zkp_proof.json
+│   ├── bnb_anchor_tx_hash.txt
+│   └── .gitkeep
 ```
 
 ---
 
-## ⚙️ Usage
+## Quickstart
 
-### 1. **Install Dependencies**
-```bash
-pip install -r requirements.txt
-```
+1. **Install dependencies:**
+    ```bash
+    pip install -r requirements.txt
+    ```
 
-### 2. **Set Environment Variables**
-- For LLM annotation:  
-  `OPENAI_API_KEY`
-- For BNB Chain anchoring:  
-  `BNB_RPC_URL`, `BNB_PRIVATE_KEY`, `BNB_ACCOUNT_ADDRESS`
+2. **Set environment variables for LLM and BNB Chain anchoring as needed:**
+    - `OPENAI_API_KEY` (optional, for AI annotation)
+    - `BNB_RPC_URL`, `BNB_PRIVATE_KEY`, `BNB_ACCOUNT_ADDRESS` (for BNB Chain proof anchoring)
 
-### 3. **Prepare Data**
-- Place `CRISPRGeneEffect.csv` and `sample_info.csv` in the `data/` directory.
+3. **Place data files in the `data/` directory (see sample CSVs).**
 
-### 4. **Run Pipeline**
-```bash
-python crispr_gbm_pipeline_v14.py
-```
+4. **Run the pipeline:**
+    ```bash
+    python crispr_gbm_pipeline_v15.py
+    ```
 
 ---
 
-## 🔍 Pipeline Steps
+## Features
 
-1. **Load Data:** Import CRISPR gene effect scores and sample metadata.
-2. **GBM Filtering:** Select glioblastoma cell lines.
-3. **Essentiality Analysis:** Compute and rank mean gene essentiality.
-4. **Manifold Learning & Clustering:**  
-   - UMAP, PHATE, or other methods for 2D projection.  
-   - KMeans or other clustering for subtype discovery.
-5. **Proof Generation:**  
-   - SHA-256 hash output files.  
-   - (Optional) Anchor hash to BNB Chain for tamper-evident record.
-6. **LLM Annotation:**  
-   - Use OpenAI or Anthropic MCP to annotate key genes.
+- **Safe, chunked data loading** and GBM filtering
+- **Gene scoring:** Calculates gene essentiality across GBM cell lines
+- **Manifold Learning:** PCA, UMAP for visualization; KMeans clustering for heterogeneity
+- **AI Annotation:** Annotates top essential genes with GPT (if OpenAI API key provided)
+- **Merkle Tree Proof:** Computes file hashes for all results and creates a Merkle root for tamper-evident proofs
+- **Simulated Zero-Knowledge Proof (ZKP):** Simulates a ZKP of Merkle root knowledge (for demonstration)
+- **Blockchain Anchoring:** Anchors Merkle root and ZKP on BNB Smart Chain (if enabled)
+- **Reproducible and auditable:** All proof files are written to the `results/` directory
 
 ---
 
-## 🌟 Example Output
+## Example Outputs
 
-- **UMAP Plot:**  
-  ![umap_gbm_clusters.png](results/umap_gbm_clusters.png)
-- **Top Genes Table (Annotated):**
-  | Gene | Essentiality_Score | LLM_Annotation |
-  |------|--------------------|----------------|
-  | ...  | ...                | ...            |
-
----
-
-## 🛡️ DeSci & Reproducibility
-
-- All results are cryptographically hashed and may be blockchain-anchored.
-- The pipeline is modular and transparent; all code and annotations are open for verification and extension.
+- `results/top10_essential_genes.csv`: Table of top essential genes
+- `results/top10_essential_genes_annotated.csv`: Same table, with AI-generated annotations
+- `results/umap_gbm_clusters.png`: UMAP projection of GBM cell lines
+- `results/results_hashes.json`: SHA-256 hashes of all result files
+- `results/merkle_tree.json`: Merkle root and tree structure for result hashes
+- `results/zkp_proof.json`: Simulated ZKP for Merkle root knowledge
+- `results/bnb_anchor_tx_hash.txt`: BNB Chain transaction hash (if enabled)
 
 ---
 
-## 🧩 Extending the Pipeline
+## License
 
-- Swap UMAP for PHATE, Multi-PHATE, MAGIC, or diffusion maps.
-- Integrate clinical/VTE phenotypes or multi-modal omics.
-- Use LLM/MCP for more advanced annotation, hypothesis generation, or sgRNA prioritization.
-- Adapt for other cancer types or functional screens.
+MIT License
 
 ---
 
-## 🤖 Credits
+## Notes
 
-Created by [TarunSathya574](https://github.com/TarunSathya574) and contributors.  
-Inspired by DeSci and open science.
+- **AI annotation is optional:** If you do not provide an OpenAI API key, annotation will be skipped.
+- **Blockchain anchoring is optional:** Set `ANCHOR_ON_CHAIN=True` in the script to enable. Requires BNB account and sufficient gas.
+- **Merkle tree/ZKP:** This implementation uses a basic Merkle tree and simulates the ZKP (for demonstration). For production, integrate with a real ZKP system.
 
 ---
 
