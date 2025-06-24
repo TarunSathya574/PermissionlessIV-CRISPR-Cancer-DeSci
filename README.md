@@ -207,5 +207,5 @@ The global cancer research community 🧬
 
 🌟 Star this repo if you believe cancer research should be permissionless!
 ---
-
+slide deck:https://docs.google.com/presentation/d/13bykP5wI3G8sflZAksqA_A4PSBIdgSMFjq9Kh3ZSdmY/edit?slide=id.p#slide=id.p 
 
