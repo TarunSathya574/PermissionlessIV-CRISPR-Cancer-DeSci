@@ -1,0 +1,30 @@
+{
+  "name": "gbm-gene-blockchain",
+  "version": "1.0.0",
+  "description": "GBM Gene Essentiality Agent - Blockchain Integration",
+  "main": "scripts/upload_results.py",
+  "scripts": {
+    "deploy-bnb": "cd contracts/bnb && node deploy.js",
+    "deploy-supra": "cd contracts/supra && bash deploy.sh",
+    "upload": "cd scripts && python upload_results.py",
+    "serve": "cd frontend && python -m http.server 8000"
+  },
+  "dependencies": {
+    "web3": "^4.0.0",
+    "ethers": "^6.0.0"
+  },
+  "devDependencies": {
+    "hardhat": "^2.19.0",
+    "@nomiclabs/hardhat-ethers": "^2.2.3"
+  },
+  "keywords": [
+    "blockchain",
+    "glioblastoma",
+    "crispr",
+    "bnb-chain",
+    "supra",
+    "gene-analysis"
+  ],
+  "author": "CRISPR-Cancer-DeSci Team",
+  "license": "MIT"
+}
