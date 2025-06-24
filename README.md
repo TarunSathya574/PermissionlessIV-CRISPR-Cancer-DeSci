@@ -12,6 +12,7 @@ Cancer research is broken:
 🔒 Siloed data: Critical research locked behind paywalls and institutional barriers
 🤔 Reproducibility crisis: 70% of researchers can't reproduce published studies
 🏛️ Centralized gatekeeping: Small group of institutions control access to breakthrough discoveries
+Most of the funding for such research is concentrated in very few cities(Just 3). 
 📊 Opaque methodologies: Black-box analysis pipelines hide crucial research steps
 
 Result: Life-saving cancer treatments delayed by years, costing millions of lives.
