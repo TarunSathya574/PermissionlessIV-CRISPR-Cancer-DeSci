@@ -36,12 +36,16 @@ BNB Smart Chain anchoring for global verification
 Enables 10,000+ researchers globally to conduct verifiable cancer research without institutional barriers
 
 🎮 Live Demo & Results
-🔬 What I Built
-Our pipeline processes real glioblastoma (GBM) CRISPR data and delivers:
-Output Description Innovation: Essential Gene Rankings Top 10 therapeutic targets AI-annotated with treatment potential 
-Tumor Heterogeneity Map UMAP visualization of cell line clusters Reveals hidden tumor subtypes 
-Blockchain Proofs Merkle tree + ZKP verification: Tamper-proof research integrity Reproducible Pipeline 
-Complete methodology transparency One-click research reproduction
+🔬 What I Built:
+*Our pipeline processes real glioblastoma (GBM) CRISPR data and delivers:
+
+-Output Description Innovation: Essential Gene Rankings Top 10 therapeutic targets AI-annotated with treatment potential 
+
+-Tumor Heterogeneity Map UMAP visualization of cell line clusters Reveals hidden tumor subtypes 
+
+-Blockchain Proofs Merkle tree + ZKP verification: Tamper-proof research integrity Reproducible Pipeline 
+
+-Complete methodology transparency One-click research reproduction
 📊 Sample Results
 Top GBM Vulnerability Genes Discovered:
 1. EGFR    - Essentiality: -2.47 | AI: "Prime target for precision therapy"
