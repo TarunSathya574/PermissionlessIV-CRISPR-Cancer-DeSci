@@ -38,7 +38,10 @@ Enables 10,000+ researchers globally to conduct verifiable cancer research witho
 🎮 Live Demo & Results
 🔬 What I Built
 Our pipeline processes real glioblastoma (GBM) CRISPR data and delivers:
-OutputDescriptionInnovationEssential Gene RankingsTop 10 therapeutic targetsAI-annotated with treatment potentialTumor Heterogeneity MapUMAP visualization of cell line clustersReveals hidden tumor subtypesBlockchain ProofsMerkle tree + ZKP verificationTamper-proof research integrityReproducible PipelineComplete methodology transparencyOne-click research reproduction
+Output Description Innovation: Essential Gene Rankings Top 10 therapeutic targets AI-annotated with treatment potential 
+Tumor Heterogeneity Map UMAP visualization of cell line clusters Reveals hidden tumor subtypes 
+Blockchain Proofs Merkle tree + ZKP verification: Tamper-proof research integrity Reproducible Pipeline 
+Complete methodology transparency One-click research reproduction
 📊 Sample Results
 Top GBM Vulnerability Genes Discovered:
 1. EGFR    - Essentiality: -2.47 | AI: "Prime target for precision therapy"
@@ -180,7 +183,7 @@ Clear Adoption Path: 10,000+ researchers need this today
 Network Effects: More users = better AI = better discoveries
 
 
-📞 Connect With Our Team
+📞 Connect With Me
 Built with ❤️ for Permissionless IV
 
 🌐 Demo: [Live pipeline demo link]
